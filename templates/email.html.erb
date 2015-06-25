@@ -1,0 +1,14 @@
+<html>
+    <head></head>
+    <body>
+    <h3>Board Summary for <%= todays_date %></h3>
+    <% board_lists.each do |list| %>
+        <h4><%= list['name'] %></h4>
+        <ul>
+            <% list['cards'].each do |card| %>
+                <li><a style="color: #333" href="<%= card['url'] %>"><%= card['name'] %></a></li>
+            <% end %>
+        </ul>
+    <% end %>
+    </body>
+</html>

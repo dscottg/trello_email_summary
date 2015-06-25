@@ -1,0 +1,37 @@
+# Rename this sample config to config.yml and fill in the information below
+
+board_one: # the name of this top level config key doesn't matter
+  app_key: # app key
+  app_secret: # app secret
+  app_name: # put in your normal app name, it will be url encoded when sent to the api
+  auth_token: # auth token
+  board_id: # the id of your trello board
+  destination_email: # which email you're sending this to
+  sender_name: # who it will show as sent from, eg. Bruce Almighty <balmighty@gmail.com>
+  expiration_window: # you probably want 'never'
+  smtp_options: # the following are the config options for gmail, though they're probably similar for other mail clients
+    address: # eg. smtp.gmail.com
+    port: # probably 587
+    domain: # 'localhost'
+    user_name: # email authentication username
+    password: # email authentication password
+    authentication: # 'plain'
+    enable_start_ttls_auto: # 'true'
+
+board_two:
+  app_key:
+  app_secret:
+  app_name:
+  auth_token:
+  board_id:
+  destination_email:
+  sender_name:
+  expiration_window:
+  smtp_options:
+    address:
+    port:
+    domain:
+    user_name:
+    password:
+    authentication:
+    enable_start_ttls_auto:
