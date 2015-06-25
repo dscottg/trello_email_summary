@@ -10,6 +10,7 @@ class TrelloMailer
   def initialize(config)
     @config = config
     @template_path = "templates/email.html.erb"
+    @subject = "Trello Summary for " + Time.now.strftime("%m/%d/%Y")
   end
 
   def send
@@ -47,6 +48,7 @@ class TrelloMailer
     end
 
     config = @config
+    subject = @subject
     mail = Mail.new do
       from config.sender_name
       to config.destination_email
