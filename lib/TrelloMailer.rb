@@ -9,7 +9,7 @@ class TrelloMailer
 
   def initialize(config)
     @config = config
-    @template_path = "templates/email.html.erb"
+    @template_path = File.join(File.dirname(__FILE__), '../templates/email.html.erb')
     @subject = "Trello Summary for " + Time.now.strftime("%m/%d/%Y")
   end
 
